@@ -1,0 +1,22 @@
+{
+  "name": "just_cuba",
+  "version": "1.0.0",
+  "description": "The best app in your life !!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://leitopoll25@bitbucket.org/leitopoll25/just_cuba.git"
+  },
+  "author": "SoftTeam",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/leitopoll25/just_cuba#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
