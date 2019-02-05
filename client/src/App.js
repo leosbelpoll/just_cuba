@@ -1,26 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment } from 'react';
+import Info from './components/Info';
 
 class App extends Component {
   render() {
+    const data = [
+      { nombre: "Pepe", edad: 20 },
+      { nombre: "Ener", edad: 51 },
+      { nombre: "Leito", edad: 18 },
+    ];
+
+    const infos = data.map(persona => (
+      <Info name={persona.nombre} age={persona.edad} />
+    ));
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Fragment>
+        {infos}
+      </Fragment>
     );
   }
 }
