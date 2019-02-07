@@ -4,7 +4,7 @@ class Header extends Component {
   render() {
     return (
       <Fragment>
-        <h1>Head_Jost_Cuba</h1>
+        <h1>This is the header</h1>
       </Fragment>
     );
   }
