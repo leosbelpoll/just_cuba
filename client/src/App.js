@@ -1,26 +1,27 @@
-import React, { Component } from 'react';
-import ReactDOM from "react-dom";
+import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
+
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import SideBar from './components/SideBar';
-import Section from './components/Section';
+import PublicRouter from './components/PublicRouter';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />        
-        <NavBar />
-        <SideBar />
-        <Footer />
-      </div>
+      <Router>
+        <Fragment>
+          <Header />
+          <NavBar />
+          <SideBar />
+          <PublicRouter />
+          <Footer />
+        </Fragment>
+      </Router>
     );
   }
 }
 
-ReactDOM.render(
-  <Section />
-);
 
 export default App;
