@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
  
 class WhoWeAre extends Component {
   render() {
     return (
-      <div>
+      <Fragment>
         <h2>WhoWeAre</h2>
         <p>We are justCuba</p>
-      </div>
+      </Fragment>
     );
   }
 }

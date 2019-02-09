@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import Home from './basicPages/Home';
-import WhoWeAre from './basicPages/WhoWeAre';
-import Contact from './basicPages/Contact';
+import Home from './Home';
+import WhoWeAre from './WhoWeAre';
+import Contact from './Contact';
 
 class Section extends Component {
   render() {
     return (
       <section>
-        <Route path='./basicPages/Home.jsx' basicPages = {Home}/>
-        <Route path='./basicPages/WhoWeAre.jsx' basicPages = {WhoWeAre}/>
-        <Route path='./basicPages/Contact.jsx' basicPages = {Contact}/>
+        <Route path="./Home.jsx" components = {Home}/>
+        <Route path="./WhoWeAre.jsx" components = {WhoWeAre}/>
+        <Route path="./Contact.jsx" components = {Contact}/>
       </section>
     );
   }

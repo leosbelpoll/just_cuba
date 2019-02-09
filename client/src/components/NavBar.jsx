@@ -8,9 +8,9 @@ class NavBar extends Component {
       <nav>
         <h1>NavBar_Jost_Cuba_0.1</h1>
         <ul id="navBar">
-          <li><NavLink to='/basicPages/Home.jsx'>Home</NavLink></li>
-          <li><NavLink to='/basicPages/WhoWeAre.jsx'>Who we are</NavLink></li>
-          <li><NavLink to='/basicPages/Contact.jsx'>Contact</NavLink></li>
+          <li><NavLink to="./Home.jsx">Home</NavLink></li>
+          <li><NavLink to="./WhoWeAre.jsx">Who we are</NavLink></li>
+          <li><NavLink to="./Contact.jsx">Contact</NavLink></li>
         </ul>
       </nav>
       </HashRouter>
