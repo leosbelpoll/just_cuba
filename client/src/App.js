@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
+import { Row, Col } from 'react-bootstrap';
 
 import Header from './components/Header';
 import NavBar from './components/NavBar';
@@ -12,11 +13,29 @@ class App extends Component {
     return (
       <Router>
         <Fragment>
-          <Header />
-          <NavBar />
-          <SideBar />
-          <PublicRouter />
-          <Footer />
+          <Row>
+            <Col>
+              <Header />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <NavBar />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs="4">
+              <SideBar />
+            </Col>
+            <Col xs="auto">
+              <PublicRouter />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Footer />
+            </Col>
+          </Row>
         </Fragment>
       </Router>
     );
