@@ -1,13 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Section extends Component {
-    render() {
-        return (
-            <section>
-                <h1>section</h1>
-            </section>
-        );
-    }
+const Section = () => {
+    return (
+        <section>
+            <h1>sectionn</h1>
+        </section>
+    );
 }
 
 export default Section;

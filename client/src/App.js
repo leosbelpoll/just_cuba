@@ -1,16 +1,14 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import PublicRouter from 'routes/PublicRouter';
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
-      <Router>
-          <PublicRouter />
-      </Router>
+        <Router>
+            <PublicRouter />
+        </Router>
     );
-  }
 }
 
 

@@ -1,13 +1,11 @@
-import React, { Component, Fragment } from "react";
- 
-class Home extends Component {
-    render() {
-        return (
-            <Fragment>
-                Home....
-            </Fragment>
-        );
-    }
+import React, { Fragment } from "react";
+
+const Home = () => {
+    return (
+        <Fragment>
+            Home....
+        </Fragment>
+    );
 }
- 
-export default Home
+
+export default Home;
