@@ -18,7 +18,7 @@ const HeaderStyled = styled.header`
 const Header = () => {
     return (
         <HeaderStyled>
-            <h1>Header Styled</h1>
+            <h1>Just in Cuba</h1>
             <Button />
             <Button value="Ir a pepe" />
             <Button />
