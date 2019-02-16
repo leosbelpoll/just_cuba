@@ -1,13 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import Button from "components/parts/Button";
-import  Logo  from "logo.jpg";
-
-const imgLogo = styled.img`
-    width : 30px;
-`;
+import Search from "components/parts/Search";
+import NavLink from "components/parts/NavLink";
+import Logo from "logo.jpg";
 
 const HeaderStyled = styled.header`
     background: rgba(0, 0, 0, .1);
@@ -21,21 +18,22 @@ const HeaderStyled = styled.header`
     }
 `;
 
+const imgLogo = styled.img`
+    width : 50px;
+`;
+
 const Header = () => {
     return (
         <HeaderStyled>
             <h1>Header Styled</h1>
             <imgLogo alt="logo" src={Logo} />
-            <Button />
-            <Button value="Ir a pepe" />
-            <Button />
-            <Button value="Hacer algo mas" />
-            <Button />
             <nav>        
                 <ul>
-                    <Link to="/">HOME</Link>
-                    <Link to="/who-we-are">WHO WE ARE</Link>
-                    <Link to="/contact">CONTACT</Link>
+                    <NavLink to="/">HOME</NavLink>
+                    <NavLink to="/who-we-are">WHO WE ARE</NavLink>
+                    <NavLink to="/contact">CONTACT</NavLink>
+                    <Search type="text" />
+                    <Button value="Search"/>
                 </ul>
             </nav>
         </HeaderStyled>
