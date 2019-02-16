@@ -25,7 +25,7 @@ const imgLogo = styled.img`
 const Header = () => {
     return (
         <HeaderStyled>
-            <h1>Header Styled</h1>
+            <h1>Just in Cuba</h1>
             <imgLogo alt="logo" src={Logo} />
             <nav>        
                 <ul>
@@ -36,6 +36,7 @@ const Header = () => {
                     <Button value="Search"/>
                 </ul>
             </nav>
+
         </HeaderStyled>
     );
 }
