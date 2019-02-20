@@ -1,10 +1,26 @@
 import React from "react";
+import styled from "styled-components";
+
+
+const FooterStyled = styled.footer`
+    background: rgba(0, 0, 0, .2);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    h1 {
+        font-size: 4em;
+        font-weight: 100;
+        margin-bottom: 30px;
+    }
+`;
 
 const Footer = () => {
     return (
-        <footer>
+        <FooterStyled>
             <h1>This is the footer</h1>
-        </footer>
+        </FooterStyled>
     );
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const InputStyled = styled.input`
+const DateStyled = styled.input`
     background: white;
     padding: 10px 25px;
     border: none;
@@ -9,10 +9,10 @@ const InputStyled = styled.input`
     font-weight: 300;
 `;
 
-const Search = () => {
+const Date = () => {
     return (
-        <InputStyled />
+        <DateStyled />
     );
 }
 
-export default Search;
+export default Date;
