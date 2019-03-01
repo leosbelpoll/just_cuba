@@ -10,9 +10,9 @@ const TextStyled = styled.input`
 `;
 
 
-const Text = () => {
+const Text = (props) => {
     return (
-        <TextStyled />
+        <TextStyled { ...props }/>
     );
 }
 

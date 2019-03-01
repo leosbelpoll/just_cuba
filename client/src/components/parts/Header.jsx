@@ -6,7 +6,7 @@ import Search from "components/parts/Search";
 import Logo from "logo.jpg";
 
 const HeaderStyled = styled.header`
-    background: rgba(0, 0, 0, .1);
+    background: rgba(0, 0, 0, .2);
     padding: 40px;
     text-align: center;
 
@@ -30,6 +30,7 @@ const Header = () => {
                     <NavLink to="/">HOME</NavLink>
                     <NavLink to="/who-we-are">WHO WE ARE</NavLink>
                     <NavLink to="/contact">CONTACT</NavLink>
+                    <NavLink to="/login">LOGIN</NavLink>
                     <Search />
                 </ul>
             </nav>
