@@ -5,7 +5,7 @@ import Text from "components/parts/Text";
 import Date from "components/parts/Date";
 import Select from "components/parts/Select";
 
-const SearchStyled = styled.footer`
+const SearchStyled = styled.form`
     
 `;
 

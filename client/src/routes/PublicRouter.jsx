@@ -4,7 +4,7 @@ import DefaultLayout from "components/layouts/DefaultLayout";
 import Home from "pages/Home";
 import WhoWeAre from "pages/WhoWeAre";
 import Contact from "pages/Contact";
-import Login from "components/parts/Login";
+import Login from "pages/Login";
 
 const PublicRouter = () => {
     return (
