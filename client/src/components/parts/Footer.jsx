@@ -5,7 +5,6 @@ import styled from "styled-components";
 const FooterStyled = styled.footer`
     background: rgba(0, 0, 0, .1);
     text-align: center;
-    position: absolute;
     bottom: 0;
     width: 100%;
 
