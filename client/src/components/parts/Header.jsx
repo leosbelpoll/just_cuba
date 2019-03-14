@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< Updated upstream
 import styled from "styled-components";
 
 import NavLink from "components/parts/NavLink";
@@ -19,20 +18,11 @@ const HeaderStyled = styled.header`
     img {
         width : 50px;
     }
-=======
-import { Link } from "react-router-dom";
-import { styled } from "styled-component"
 
-import  Logo  from "logo.jpg";
-
-const imgLogo = styled.img`
-  width : 30px;
->>>>>>> Stashed changes
 `;
 
 const Header = () => {
     return (
-<<<<<<< Updated upstream
         <HeaderStyled>
             <h1>Just in Cuba</h1>
             <img alt="logo" src={Logo} />
@@ -47,19 +37,7 @@ const Header = () => {
             </nav>
 
         </HeaderStyled>
-=======
-        <header>
-            <imgLogo alt="logo" src={Logo} />
-            <h1>Just in Cuba</h1>
-            <nav>        
-                <ul>
-                    <Link to="/">HOME</Link>
-                    <Link to="/who-we-are">WHO WE ARE</Link>
-                    <Link to="/contact">CONTACT</Link>
-                </ul>
-            </nav>
-        </header>
->>>>>>> Stashed changes
+
     );
 }
 

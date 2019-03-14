@@ -72,7 +72,7 @@ export default class Login extends Component {
                     />
                 </div>
                 <div>
-                    <sapn>Remember me</sapn>
+                    <span>Remember me</span>
                     <input
                         id="rememberMe"
                         type="checkbox"
