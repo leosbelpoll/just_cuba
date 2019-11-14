@@ -1,12 +1,19 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const favicon = require('express-favicon');
+const path = require('path');
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
+const port = process.env.PORT || 8080;
+
+const app = express();
+
+app.use(favicon(__dirname + '/client/build/favicon.ico'));
+
+// the __dirname is the current directory from where the script is running
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-const PORT = process.env.PORT || 4000;
-
-app.listen(PORT, function () {
-  console.log(`Example app listening on port ${PORT}!`);
-});
+app.listen(port);
