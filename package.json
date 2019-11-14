@@ -4,7 +4,7 @@
   "description": "The best app in your life !!",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cd client && npm run build && cd .. && node server.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,8 @@
   "license": "MIT",
   "homepage": "https://bitbucket.org/leitopoll25/just_cuba#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-favicon": "^2.0.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
