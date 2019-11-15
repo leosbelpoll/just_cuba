@@ -4,8 +4,8 @@
   "description": "The best app in your life !!",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "deploy": "cd client && npm run build && cd .."
+    "start": "cd client && npm run build && cd .. && node server.js",
+    "dev": "node server.js"
   },
   "repository": {
     "type": "git",
