@@ -18,6 +18,7 @@ const HeaderStyled = styled.header`
     img {
         width : 50px;
     }
+
 `;
 
 const Header = () => {
@@ -36,6 +37,7 @@ const Header = () => {
             </nav>
 
         </HeaderStyled>
+
     );
 }
 
