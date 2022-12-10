@@ -14,7 +14,7 @@
   "license": "MIT",
   "homepage": "https://bitbucket.org/leitopoll25/just_cuba#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
