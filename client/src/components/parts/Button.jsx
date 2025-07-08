@@ -7,6 +7,7 @@ const ButtonStyled = styled.button`
     border: none;
     cursor: pointer;
     font-weight: 300;
+    display: ${props => props.block && "block"};
 
     :hover {
         background: rgba(0, 0, 0, 0.05);
